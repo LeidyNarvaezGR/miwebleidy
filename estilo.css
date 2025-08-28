@@ -1,27 +1,99 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-}
-header{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    text-align: center;
-}
-menu{
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: #fff;           
+    display: flex;         
+    min-height: 100vh;    
+  }
+  
+  
+  .sidebar {
+    width: 220px;              
+    background: #463c3c;       
     padding: 20px;
-}
-h1,h2,h3{
-    color: antiquewhite;
-    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.galeria img{
+    min-height: 100vh;         
+    position: fixed;          
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    color: #815917; 
+  }
+  
+
+  .contenido {
+    margin-left: 220px;   
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .contenido h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #22633f;
+  }
+  
+  .contenido h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #5f261c;
+  }
+  
+  .contenido p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  
+  .galeria {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .galeria img {
     width: 100%;
-    border-radius: 50%;
-    height: 120;
-    border: 3px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  .img-yo{
+    width: 150px;
+    height: 150px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.img-sobremi{
+    width: 310px;
+    height: 270px;
+}
+.diploma{
+    width: 350px;
+    height: 300px;
 }
